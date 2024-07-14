@@ -24,8 +24,6 @@ nLambda = nrow(output[[1]]$lambda)
 
 setwd("C:/Users/pavel/Documents/")
 clin_in_new<-read.table("./Analysis_brca/data/clin_brca_use.txt")
-clin_in_new$deceased=clin_in_new$vital_status=="Dead"
-clin_in_new$overall_survival=ifelse(clin_in_new$deceased,clin_in_new$days_to_death, clin_in_new$days_to_last_follow_up)
 best.cluster=alist()
 sig_autoen_var=alist()
 for(k in 1:5){
