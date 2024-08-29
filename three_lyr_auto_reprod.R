@@ -4,7 +4,7 @@ library(dplyr)
 library(tidyverse)
 library(curl)
 #library(wordspace) # for nromalizing rows or columns in unit length
-#library(Matrix)
+library(Matrix)
 library(DAAG)
 library(keras)
 library(tensorflow)
